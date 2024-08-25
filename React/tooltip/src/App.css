@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+}
+
+header {
+  width: 100%;
+  display: flex;
+  /* border: 2px solid red; */
+  height: 40px;
+}
+
+nav {
+  width: 50%;
+  padding: 1rem;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  position: relative;
+  cursor: pointer;
+}
+li > span {
+  height: 20px;
+  width: auto;
+}

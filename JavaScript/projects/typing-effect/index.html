@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <textarea id="text_container">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium harum officia. Sint quibusdam veritatis fugit est ad laudantium temporibus numquam quis a? Corporis nihil quas eius veniam suscipit itaque!
+        </textarea>
+
+        <div id="fields">
+            <div id="speed_wrapper">
+                <label for="speed">Select speed</label>
+                <select name="" id="typing_speed">
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300" selected>300</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+                    <option value="700">700</option>
+                    <option value="800">800</option>
+                    <option value="900">900</option>
+                    <option value="1000">1000</option>
+                </select>
+            </div>
+
+            <span id="typing_start_btn">Type</span>
+
+        </div>
+
+
+        <div id="text-area">
+            <span id="text_type"></span><span id="cursor"></span>
+        </div>
+
+    </main>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

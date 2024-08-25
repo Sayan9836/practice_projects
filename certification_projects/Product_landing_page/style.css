@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    line-height: 1.2;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(188, 188, 8);
+
+}
+
+i {
+    font-size: 2rem;
+    color: rgb(124, 124, 19);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem 0 2rem;
+    align-items: center;
+    min-height: 75px;
+    width: 100%;
+    background-color: #eee;
+    z-index: 1;
+}
+
+header > div {
+    width: 350px;
+    height: 35px;
+}
+
+ header img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    gap: 1.3rem;
+    font-size: 19px;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-inline: auto;
+    align-items: center;
+}
+
+.form_wrapper h2 {
+    font-size: 2rem;
+    text-align: center; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    align-items: center;
+}
+
+
+form input{
+    width: 98%;
+    padding:  0.6rem 1.25rem;
+    outline: none;
+    font-size: 18px;
+}
+
+input[type = "submit"] {
+    padding:  0.7rem 0.5rem;
+    width: 42%;
+    border: 1px solid yellow;
+    font-weight: 800;
+    font-weight: 600;
+    background: linear-gradient(to right , rgb(112, 30, 30),yellow,rgb(61, 60, 60));
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.container #Feature{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding-left: 20%;
+}
+
+#Feature > div {
+    display: flex;
+    gap: 2.2rem;
+    align-items: center;
+}
+
+
+#How_It_Works {
+    text-align: center;
+}
+
+#How_It_Works iframe{
+    width: 40%;
+    height: 350px;
+}
+
+#Pricing {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#Pricing>div {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    text-align: center;
+}
+#Pricing > div > div:nth-child(1){
+    background-color: #c8c6c6;
+    padding: 0.6rem;
+    font-size: 19px;
+}
+
+#Pricing > div > div:nth-child(4){
+    padding:  0.6rem 0.6rem 1rem 0.6rem;
+}
+
+#Pricing #description {
+    text-align: left;
+    padding: 0 1rem;
+
+}
+
+#Pricing span {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+#Pricing button {
+    padding: 0.4rem 0.8rem;
+    background: linear-gradient(to right , rgb(112, 30, 30),yellow,rgb(61, 60, 60));
+    border: 1px solid yellow;
+    font-size: 17px;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #eee;
+}
+
+.footer_wrapper {
+    float: right;
+    margin-right: 2rem;
+}
+
+
+@media screen and (max-width: 75em) {
+    #Pricing>div{
+        width: 25%;
+    }
+
+    #How_It_Works iframe{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    #Pricing>div{
+        width: 28%;
+    }
+
+    #How_It_Works iframe{
+        width: 65%;
+    }
+
+    .container #Feature{
+        padding-left: 14%;
+    }
+}
+
+
+@media screen and (max-width: 65em) {
+
+    #Pricing>div{
+        width: 32%;
+    }
+
+    #How_It_Works iframe{
+        width: 80%;
+    }
+
+    .container #Feature{
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 45em){
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #Pricing {
+        gap: 2rem;
+    }
+
+    #Pricing>div{
+        width: 60%;
+    }
+
+    #How_It_Works iframe{
+        width: 100%;
+    }
+
+    .container #Feature{
+        padding-left: 8%;
+    }
+
+    .wrapper {
+        margin-top: 8rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+
+            <span> <span class="player_score">0</span> : <span class="bot_score">0</span></span>
+            <div class="who_wins"></div>
+
+        </header>
+
+        <div class="ground">
+            <div class="player_side">
+                <span class="text">PLAYER</span>
+                <div class="circle"></div>
+                <div class="small_circle_wrapper">
+
+                </div>
+            </div>
+            <div class="bot_side">
+                <span class="text">BOT</span>
+                <div class="circle filled"></div>
+                <div class="small_circle_wrapper">
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <button onclick="Reset()">Reset</button>
+        </footer>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

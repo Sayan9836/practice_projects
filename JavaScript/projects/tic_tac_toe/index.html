@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h3>Choose Your Option</h3>
+
+      <div id="wrapper">
+        <div id="option">
+          <div>
+            <input
+              name="option"
+              type="radio"
+              onclick="handleUserSelection('X')"
+            />
+            <label for="">X</label>
+          </div>
+
+          <div>
+            <input
+              name="option"
+              type="radio"
+              onclick="handleUserSelection('O')"
+            />
+            <label for="">O</label>
+          </div>
+        </div>
+
+        <div id="ground">
+          <div id="1" class="field one"></div>
+          <div id="2" class="field two"></div>
+          <div id="3" class="field three"></div>
+          <div id="4" class="field four"></div>
+          <div id="5" class="field five"></div>
+          <div id="6" class="field six"></div>
+          <div id="7" class="field seven"></div>
+          <div id="8" class="field eight"></div>
+          <div id="9" class="field nine"></div>
+        </div>
+      </div>
+
+      <span id="winner"></span>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 255);
+}
+
+.form_container {
+  width: max(24rem, 50vw);
+  padding: 2rem;
+  margin-inline: auto;
+  margin-top: 5rem;
+  box-shadow: 2px 2px 4px rgb(107, 107, 107);
+  background-color: aliceblue;
+}
+
+input:not([type="file"]) {
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form_wrapper > div {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.form_wrapper > div > label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: grey;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+  flex-grow: 1;
+  padding: 0.7rem 1.5rem;
+  position: absolute;
+  left: 30%;
+  width: 70%;
+}
+
+.gender_container {
+  position: relative;
+}
+
+.gender_wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  width: 70%;
+}
+
+.gender_wrapper > div input {
+  margin-left: 8px;
+}
+
+.file_container {
+  position: relative;
+}
+
+.file_wrapper {
+  position: absolute;
+  left: 30%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.file_wrapper > span {
+  border: 1px solid rgb(107, 17, 17);
+  padding: 0.4rem 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+}
+
+.habits_container {
+  position: relative;
+}
+
+.habits_wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  width: 70%;
+}
+
+.habits_wrapper > div input {
+  margin-left: 10px;
+}
+
+button {
+  width: fit-content;
+  padding: 0.6rem 2.25rem;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  border: none;
+  box-shadow: 2px 2px 3px #000;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: gray;
+}
+
+@media screen and (max-width: 40em) {
+  .form_container {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 40.001em) and (max-width: 60em) {
+  .form_container {
+    width: 80vw;
+  }
+}

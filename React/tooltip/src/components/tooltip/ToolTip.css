@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tooltip {
+  border: 1px solid black;
+  position: absolute;
+  top: 2rem;
+  padding: 0.25rem 1rem;
+  transition: 4s ease;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}

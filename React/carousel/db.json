@@ -1,0 +1,84 @@
+{
+   "users":[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "phone": "123-456-7890",
+      "address": "123 Main Street, Cityville, USA",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "phone": "987-654-3210",
+      "address": "456 Elm Street, Townsville, USA",
+      "status": "Inactive"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "555-555-5555",
+      "address": "789 Oak Street, Villageton, USA",
+      "status": "Active"
+    },
+    {
+      "id": 4,
+      "name": "Bob Anderson",
+      "email": "bob@example.com",
+      "phone": "555-123-4567",
+      "address": "567 Pine Street, Hamletville, USA",
+      "status": "Active"
+    },
+    {
+      "id": 5,
+      "name": "Ella Williams",
+      "email": "ella@example.com",
+      "phone": "333-222-1111",
+      "address": "987 Maple Avenue, Suburbia, USA",
+      "status": "Inactive"
+    },
+    {
+      "id": 6,
+      "name": "David Brown",
+      "email": "david@example.com",
+      "phone": "888-888-8888",
+      "address": "333 Birch Road, Countryside, USA",
+      "status": "Active"
+    },
+    {
+      "id": 7,
+      "name": "Olivia Taylor",
+      "email": "olivia@example.com",
+      "phone": "777-777-7777",
+      "address": "456 Cedar Lane, Lakeside, USA",
+      "status": "Active"
+    },
+    {
+      "id": 8,
+      "name": "Michael Wilson",
+      "email": "michael@example.com",
+      "phone": "111-222-3333",
+      "address": "234 Willow Drive, Riverside, USA",
+      "status": "Inactive"
+    },
+    {
+      "id": 9,
+      "name": "Sophia Martinez",
+      "email": "sophia@example.com",
+      "phone": "999-999-9999",
+      "address": "876 Oak Lane, Mountainside, USA",
+      "status": "Active"
+    },
+    {
+      "id": 10,
+      "name": "Liam Jones",
+      "email": "liam@example.com",
+      "phone": "444-444-4444",
+      "address": "111 Cherry Street, Beachtown, USA",
+      "status": "Active"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.progress {
+    width: max(25rem,40vw);
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 15px;
+    height: 25px;
+    overflow: hidden;
+    /* position: relative; */
+    margin: auto;
+    margin-top: 10rem;
+    border: 1px solid black;
+}
+.progress > span {
+    position: absolute;
+    left: 48%;
+}
+.progress > div {
+    height: 100%;
+    background-color: rgb(39, 226, 64);
+}

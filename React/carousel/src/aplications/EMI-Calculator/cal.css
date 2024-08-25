@@ -1,0 +1,11 @@
+.calculator {
+    height: 150vh;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: linear-gradient(red,orange,green,blue);
+   border-radius: 20px;
+}

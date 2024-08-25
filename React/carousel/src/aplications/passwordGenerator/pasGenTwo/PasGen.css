@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 40vw;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+span[password="password"] {
+  word-break: break-all;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider > input[type="range"] {
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.options > div:nth-child(2) {
+  margin: auto;
+}
+
+.options > div:nth-child(4) {
+  margin: auto;
+}
+
+form > button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 45em) {
+  .wrapper {
+    max-width: 80vw;
+  }
+}

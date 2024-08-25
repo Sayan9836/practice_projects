@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20rem;
+    z-index: 2;
+    position: absolute;
+    top: 12rem;
+    left:41%;
+    background-color: rgba(19, 19, 19, 0.8);
+    padding: 1rem;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border-style: 2px solid rgb(250, 211, 161);
+    padding: 0.5rem 1.25rem ;
+    color: white;
+
+}
+
+button[type="submit"] {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+}

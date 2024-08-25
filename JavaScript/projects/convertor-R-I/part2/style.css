@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 40vw;
+  border: 1px solid red;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+form {
+  width: 100%;
+}
+label:nth-child(1) {
+  margin-right: 2rem;
+}
+
+input:not([type="radio"]) {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  outline: 1px solid gray;
+  padding-inline: 1rem;
+}
+
+.display {
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+  min-height: 4rem;
+}

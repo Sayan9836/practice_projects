@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li onclick="openModal('INTRO')">INTRO</li>
+        <li onclick="openModal('WORK')">WORK</li>
+        <li onclick="openModal('ABOUT')">ABOUT</li>
+        <li onclick="openModal('CONTACT')">CONTACT</li>
+      </ul>
+    </nav>
+
+    <div class="modal_wrapper">
+      <div class="modal_inner">
+        <h2 id="heading"></h2>
+        <figure class="container">
+          <div class="image_wrapper">
+            <img src="" alt="adventures journey" id="image" />
+          </div>
+          <p class="desc"></p>
+        </figure>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

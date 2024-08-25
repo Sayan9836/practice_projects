@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+canvas {
+  width: max(600px, 60vw);
+  height: 400px;
+  border: 2px solid rgb(141, 140, 140);
+  margin-left: 4rem;
+  margin-top: 4rem;
+}

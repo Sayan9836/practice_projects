@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <header>
+            <span>CALCULATOR</span>
+        </header>
+        <input type="text"  class="display" value=""/>
+
+        <div id="buttons">
+
+            <div class="circle">
+                <span>%</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="clearText()">C</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="backSpace()">&lt;</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="operation('/')">/</span>
+            </div>
+
+
+            <div onclick="operation(7)" class="circle">
+                <span >7</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="operation(8)">8</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="operation(9)">9</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="operation('*')">*</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation(4)">4</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="operation(5)">5</span>
+            </div>
+
+
+            <div class="circle">
+                <span onclick="operation(6)">6</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation('-')">-</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation(1)">1</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation(2)">2</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation(3)">3</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation('+')">+</span>
+            </div>
+
+            <div class="circle">
+                <span >0</span>
+            </div>
+
+            <div class="circle">
+                <span onclick="operation('.')">.</span>
+            </div>
+
+            
+            <div class="circle">
+                <span style="font-size: xx-large; font-weight: 800;" onclick="execute()">=</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.cell {
+  border: 1px solid black;
+  height: 30px;
+}
+
+.active.active {
+  background-color: red;
+}
+
+.cell.focus {
+  border: 1px solid gray;
+}

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40vw;
+  min-height: 40vh;
+  margin: auto;
+  margin-top: 10rem;
+  border: 2px solid grey;
+  justify-content: space-around;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* main > * {
+    border: 1px solid red;
+} */
+
+header {
+  text-align: center;
+}
+
+.ground {
+  display: flex;
+}
+
+.ground > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.circle.filled {
+  background-color: rgb(39, 171, 171);
+}
+
+.small_circle_wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.small_circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_circle:hover {
+  cursor: pointer;
+}
+
+.small_circle.filled {
+  background-color: aqua;
+}
+
+img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+}
+
+button {
+  padding: 0.3rem 1rem;
+  background-color: rgb(230, 33, 33);
+  color: white;
+}
+
+span {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 50em) {
+  /* 
+    body {
+        display: grid;
+        place-items: center;
+        height: 100dvh;
+    } */
+  main {
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 8rem;
+  }
+
+  /* .ground {
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+
+    .small_circle_wrapper {
+        gap: unset;
+        justify-content: space-evenly;
+    } */
+}

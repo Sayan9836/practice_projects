@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #f3f3f3;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+form {
+  width: 50vw;
+  padding: 3rem 2rem 3.5rem 2rem;
+  background-color: rgba(27, 27, 50, 0.8);
+  border-radius: 5px;
+}
+
+#inner_form_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#inner_form_wrapper > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#inner_form_wrapper > div > input {
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  border: 1px solid black;
+  outline: none;
+  color: black;
+  font-size: 17px;
+}
+
+#inner_form_wrapper > div > label {
+  font-size: 1.125rem;
+}
+
+input[name="name"],
+input[type="email"],
+input[type="number"],
+select {
+  height: 2.375rem;
+  outline: none;
+  padding-left: 0.2rem;
+}
+
+#confirmation_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#skills_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#skills,
+#confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#skills > div,
+#confirmation > div {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: fit-content;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+textarea {
+  width: 100%;
+  min-height: 10rem;
+  resize: vertical;
+  padding: 1rem;
+  outline: none;
+  font-size: 17px;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.6rem;
+  background: #37af65;
+  color: #f3f3f3;
+}
+
+input::placeholder {
+  color: #495057;
+}
+
+textarea::placeholder {
+  color: #495057;
+}
+
+option {
+  display: block;
+  min-height: 3rem;
+  padding: 0 2px 1px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 60em) {
+  form {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  form {
+    width: 88vw;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  form {
+    width: 95vw;
+  }
+}

@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin-inline: auto;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#option {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#option>div {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+#ground {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid red; */
+}
+
+#ground>div {
+    border: 1px solid black;
+    min-height: 8rem;
+    height: 100%;
+    width: 100%;
+}
+
+
+#ground>div:nth-child(1),
+#ground>div:nth-child(4),
+#ground>div:nth-child(7) {
+    border-left: none;
+}
+
+#ground>div:nth-child(1),
+#ground>div:nth-child(2),
+#ground>div:nth-child(3) {
+    border-top: none;
+}
+
+#ground>div:nth-child(3),
+#ground>div:nth-child(6),
+#ground>div:nth-child(9) {
+    border-right: none;
+}
+
+#ground>div:nth-child(7),
+#ground>div:nth-child(8),
+#ground>div:nth-child(9) {
+    border-bottom: none;
+} 
+
+
+#ground>div:nth-child(1),
+#ground>div:nth-child(2),
+#ground>div:nth-child(4),
+#ground>div:nth-child(5) {
+    border-bottom-right-radius: 8px;
+}
+
+#ground>div:nth-child(5),
+#ground>div:nth-child(8),
+#ground>div:nth-child(4),
+#ground>div:nth-child(7) {
+    border-top-right-radius: 8px;
+}
+
+#ground>div:nth-child(2),
+#ground>div:nth-child(3),
+#ground>div:nth-child(5),
+#ground>div:nth-child(6) {
+    border-bottom-left-radius: 8px;
+}
+
+#ground>div:nth-child(5),
+#ground>div:nth-child(6),
+#ground>div:nth-child(8),
+#ground>div:nth-child(9) {
+    border-top-left-radius: 8px;
+}
+
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: black;
+    font-weight: 700;
+}
+
+#winner {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 40em) {
+
+    main {
+        width: 88vw;
+    }
+
+    h3 {
+        font-size: 2.7rem;
+    }
+
+    #ground>div {
+        min-height: 8rem;
+    }
+}

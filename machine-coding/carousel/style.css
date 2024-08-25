@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+.carousel {
+  width: clamp(22rem, 55vw, 40rem);
+  position: relative;
+  border: 1px solid gray;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carousel > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.prev {
+  border: 2px solid red;
+  padding: 1rem;
+}
+
+.next {
+  border: 2px solid red;
+  padding: 1rem;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 20vh;
+    border: 1px solid black;
+    margin: 8rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    width: clamp(22rem, 55vw, 30rem);
+}
+
+
+textarea {
+
+    min-height: 8.5rem;
+    width: 100%;
+    border: 2px solid blue;
+    overflow-y: scroll;
+    padding: 1rem;
+    resize: vertical;
+}
+
+#fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ #speed_wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: black;
+}
+
+label {
+ font-weight: 600;
+}
+
+select {
+    height: 30px;
+    background-color: rgb(10, 159, 10);
+    border: 1px solid yellow;
+    color: white;
+}
+
+
+
+#typing_start_btn {
+    padding: 4px 10px;
+    background-color: rgb(181, 34, 24);
+    border: 1px solid yellow;
+    cursor: pointer;
+}
+
+#text-area {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid red;
+    min-height: 3.32rem;
+}
+
+
+#cursor {
+    display: none;
+    width: 1.5px;
+    height: 0.89em;
+    background: rgb(140, 29, 29);
+    animation: blink 1s ease infinite;
+    position: relative;
+    top: 3px;
+    left: 2px;
+
+}
+
+#text_type {
+    color: black;
+    /* font-size: 17px; */
+}
+
+
+@keyframes blink {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+
+/* @media screen and (max-width) {
+    
+} */
+
+
+
